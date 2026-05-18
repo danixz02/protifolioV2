@@ -46,19 +46,15 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-
     position: fixed;
     top: 0;
     right: -100%;
     width: 75%;
     max-width: 320px;
     height: 100vh;
-
     padding: 6rem 2rem;
     background-color: var(--secondary);
-
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
-
     transition: right 0.35s ease;
     z-index: 1000;
   }
@@ -91,6 +87,8 @@
 
   .texto {
     font-size: clamp(1rem, 2vw, 1.4rem);
+    margin-top: 20px;
+    margin-bottom: -27px;
   }
 
   .titulo {
@@ -140,6 +138,8 @@
   .tituloSessao {
     font-size: clamp(2rem, 7vw, 3rem);
     text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   .infos {
@@ -154,10 +154,20 @@
     max-width: 420px;
     margin: 0 auto;
   }
+   /* =========================
+     EXPERIÊNCIAS
+  ========================= */
+  .btnsSwiper {
+    margin-top: 50px!important;
+  }
 
   /* =========================
      PROJETOS
   ========================= */
+  .card {
+    margin-bottom: 20px;
+  }
+
   .cardsProjetos {
     display: grid;
     grid-template-columns: 1fr;
@@ -206,6 +216,7 @@
 
   .infosFront,
   .infosBack {
+    margin-top: 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr 1fr));
@@ -255,6 +266,13 @@
     font-size: clamp(2rem, 6vw, 2.5rem);
     margin: 3rem 0 1.5rem;
     line-height: 1.2;
+  }
+
+  .ctaContato {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-top: -20px;
+    margin-bottom: 0.5rem;
   }
 
   /* =========================
@@ -308,6 +326,6 @@
   }
 
   .menu {
-    width: 85%;
+    width: 100%;
   }
 }
