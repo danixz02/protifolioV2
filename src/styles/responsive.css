@@ -1,0 +1,197 @@
+.burger.toggle div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.toggle div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 911px) {
+
+  section {
+    padding: 0 10px;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    padding: 0 2rem;
+  }
+
+  .logo img {
+    width: 4rem;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+
+  .menu.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Ajuste dos itens do menu no mobile (empilhados) */
+  .menu li {
+    border: none;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .menu li:hover {
+    background-color: var(--main-color);
+    border: none;
+    color: var(--primary);
+  }
+
+  /* HOME */
+  #inicio {
+    margin-top: 3rem;
+    padding: 0 3rem;
+  }
+
+  .texto {
+    font-size: 24px;
+  }
+
+  .titulo {
+    font-size: 66px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .cargo {
+    font-size: 20px;
+    margin-top: -1rem;
+    text-align: center;
+  }
+
+  .btnsHome {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .faixa {
+    margin-top: 4rem;
+  }
+
+  .textoFaixa {
+    font-size: 24px;
+  }
+
+  /* SOBRE */
+  #sobre {
+    margin-top: 3rem;
+    padding: 0 3rem;
+  }
+
+  .tituloSessao {
+    font-size: 46px;
+    text-align: center;
+  }
+
+  .infos {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .imgSobre {
+    width: 100%;
+  }
+
+  /* PROJETOS */
+  .cardsProjetos {
+    gap: 17px;
+    padding: 0 1rem;
+  }
+
+  .imgProjeto {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardsProjetos .card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .tituloProjeto {
+    font-size: 24px;
+  }
+
+  .descricaoProjeto {
+    font-size: 14px;
+  }
+
+  .btnsProjeto {
+    flex-direction: column;
+  }
+
+  /* SKILLS */
+  #MinhasSkills {
+    padding: 0 3rem;
+  }
+
+  .infosSection {
+    margin-top: 3.3rem;
+    text-align: center;
+  }
+
+  .infosFront, .infosBack {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .front img,
+  .back img {
+    width: 90px;
+  }
+
+  /* CTA CONTATO */
+  .CTA {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 3rem;
+    margin-bottom: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #footerInfos {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menusFooter {
+    margin-top: 2rem;
+  }
+
+  .textoContatoFooter {
+    font-size: 25px;
+    text-align: center;
+  }
+}

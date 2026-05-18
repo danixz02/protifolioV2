@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <title>Portifolio - Daniel Friedrich</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="src/img/logo/logo.svg" alt="Logo" />
+        </div>
+        <!-- Botão do menu hambúrguer -->
+        <div class="burger" id="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#minhasSkills">Minhas Skill's</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio" class="hidden">
+      <span class="tag">Início</span>
+      <p class="texto">Olá, eu me chamo</p>
+      <h1 class="titulo">Daniel Friedrich</h1>
+      <p class="cargo">Desenvolvedor Front-End & Designer</p>
+
+      <div class="btnsHome hidden">
+        <a href="" class="btnPrimary" id="download-btn">Download CV
+          <img src="./src/img/icones/download-icon.svg" alt="Download icon" class="iconLink"/>
+        </a>
+        <a href="#contato" class="btnSecondary">
+          <img src="./src/img/icones/phone-icon.svg" alt="Phone icon" class="iconLink" />
+          Entrar em contato
+        </a>
+      </div>
+    </section>
+
+    <div class="faixa" class="hidden">
+      <div class="textoFaixa">
+        Desenvolvedor Front-End | Designer | Desenvolvedor Front-End | Designer
+        | Desenvolvedor Front-End | Designer | Desenvolvedor Front-End |
+        Designer | Desenvolvedor Front-End | Designer | Desenvolvedor Front-End
+        | Designer | Desenvolvedor Front-End | Designer |
+      </div>
+    </div>
+
+    <section id="sobre" class="hidden">
+      <span class="tag">Sobre mim</span>
+      <p class="tituloSessao">Sobre mim</p>
+
+      <div class="infos">
+        <div class="info">
+          <p>
+            Estou constantemente buscando aprimorar minhas habilidades na área
+            da programação. Meu foco é me tornar um desenvolvedor web, criando
+            soluções eficientes.
+          </p>
+          <br />
+
+          <p>
+            Meu objetivo é desenvolver sites que não apenas atendam às
+            necessidades dos usuários, mas também proporcionem experiências
+            funcionais e de alto impacto.
+          </p>
+        </div>
+        <img src="src/img/fotoSobre.jpeg" alt="" class="imgSobre" />
+      </div>
+    </section>
+
+    <section id="experiencias" class="hidden">
+      <span class="tag">Experiências</span>
+      <p class="tituloSessao">Minhas Experiências</p>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <span class="periodo">2023 - 2024</span>
+            <p class="cargoXp">Adolescente Aprendiz</p>
+            <p class="descricaoExp">
+              Atuei como adolescente aprendiz na Vitagrícola, no setor de
+              marketing na qual fazia artes para as redes sociais e campanhas,
+              contribuía para o desenvolvimento de metas para novos vendedores.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <span class="periodo">2024 - 2025</span>
+            <p class="cargoXp">Auxiliar de Marketing</p>
+            <p class="descricaoExp">
+              Atuei como auxiliar de marketing, no setor de marketing na qual
+              fazia artes para as redes sociais e campanhas, contribuía para o
+              desenvolvimento de metas para novos vendedores e na organização de
+              eventos.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <span class="periodo">2024 - 2025</span>
+            <p class="cargoXp">Projetos Freelancer Simples</p>
+            <p class="descricaoExp">
+              Atuei como freelancer no desenvolvimento de sites de página única,
+              utilizando HTML, CSS, Bootstrap e JavaScript. Os projetos eram
+              voltados para clientes que buscavam soluções simples, funcionais e
+              com boa apresentação.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <span class="periodo">2025 - 2026</span>
+            <p class="cargoXp">Estagiário de Programação</p>
+            <p class="descricaoExp">
+              Atuei como estagiário de programação na C2TI, no setor de
+              desenvolvimento, onde prestei suporte aos sites gerados pela IA
+              SibNext e auxiliei na manutenção de sites.
+            </p>
+          </div>
+        </div>
+        <div class="btnsSwiper">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="hidden">
+      <span class="tag">Projetos</span>
+      <p class="tituloSessao">Alguns Projetos</p>
+
+      <div class="cardsProjetos hidden">
+        <!-- Projeto 01 -- Convite de Casamento -->
+        <div class="card hidden">
+          <img src="./src/img/projetos/projeto01.png" alt="imagem de um convite de casamento" class="imgProjeto"/>
+
+          <div class="infosProjetos">
+            <h3 class="tituloProjeto">Convite de Casamento</h3>
+            <p class="descricaoProjeto">
+              Um site desenvolvido para a Bruna e o Ronaldo, com o objetivo de
+              anunciar e convidar pessoas para o seu casamento.
+            </p>
+
+            <div class="tagsProjeto">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Bootstrap 5</span>
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <div class="btnsProjeto">
+              <a href="https://danixz02.github.io/Bruna-e-Ronaldo/" class="btnPrimary">Ver Projeto
+                <img src="./src/img/icones/open-icon.svg" alt="imagem de um link" class="iconLink"/>
+              </a>
+              <a href="https://github.com/danixz02/Bruna-e-Ronaldo" class="btnSecondary">
+                <img src="./src/img/icones/github-icon.svg" alt="imagem de um link" class="iconLink"/>Git Hub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 02 -- Soft Coffee -->
+        <div class="card hidden">
+          <img src="./src/img/projetos/projeto02.png" alt="imagem de um projeto de uma cafeteria" class="imgProjeto"/>
+
+          <div class="infosProjetos">
+            <h3 class="tituloProjeto">Soft Coffee</h3>
+            <p class="descricaoProjeto">
+              Um site desenvolvido para a Soft Coffee, com o objetivo de
+              apresentar os produtos e serviços da empresa.
+            </p>
+
+            <div class="tagsProjeto">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <div class="btnsProjeto">
+              <a href="https://danixz02.github.io/soft-Coffee/" class="btnPrimary">Ver Projeto
+                <img src="./src/img/icones/open-icon.svg" alt="imagem de um link" class="iconLink"/>
+              </a>
+              <a href="https://github.com/danixz02/soft-Coffee" class="btnSecondary">
+                <img src="./src/img/icones/github-icon.svg" alt="imagem de um link" class="iconLink"/>Git Hub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 03 -- Cafés Moura -->
+        <div class="card hidden">
+          <img src="./src/img/projetos/projeto03.png" alt="imagem de um projeto de uma cafeteria" class="imgProjeto"/>
+
+          <div class="infosProjetos">
+            <h3 class="tituloProjeto">Cafés Moura</h3>
+            <p class="descricaoProjeto">
+              Um site desenvolvido para a Cafés Moura, com o objetivo de
+              apresentar os produtos e serviços da empresa.
+            </p>
+
+            <div class="tagsProjeto">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <div class="btnsProjeto">
+              <a href="https://cafesmoura.vercel.app/" class="btnPrimary">Ver Projeto
+                <img src="./src/img/icones/open-icon.svg" alt="imagem de um link" class="iconLink"/>
+              </a>
+              <a href="https://github.com/danixz02/cafes-moura" class="btnSecondary">
+                <img src="./src/img/icones/github-icon.svg" alt="imagem de um link" class="iconLink"/>Git Hub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 04 -- Painel de Vagas -->
+        <div class="card hidden">
+          <img
+            src="./src/img/projetos/projeto04.png" alt="imagem de um projeto de vagas" class="imgProjeto"/>
+
+          <div class="infosProjetos">
+            <h3 class="tituloProjeto">Painel de Vagas - Nexify</h3>
+            <p class="descricaoProjeto">
+              Um site desenvolvido para a Nexify, com o objetivo de apresentar
+              suas oportunidades de emprego.
+            </p>
+
+            <div class="tagsProjeto">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <div class="btnsProjeto">
+              <a href="https://vagasdisponiveisnexify.vercel.app/" class="btnPrimary">Ver Projeto
+                <img src="./src/img/icones/open-icon.svg" alt="imagem de um link" class="iconLink" />
+              </a>
+              <a href="https://github.com/danixz02/Painel-de-Vagas-Nexify" class="btnSecondary">
+                <img src="./src/img/icones/github-icon.svg" alt="imagem de um link" class="iconLink"/>Git Hub
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 05 -- EcoResidencial -->
+        <div class="card hidden">
+          <img src="./src/img/projetos/projeto05.png" alt="" class="imgProjeto"/>
+
+          <div class="infosProjetos">
+            <h3 class="tituloProjeto">EcoResidencial</h3>
+            <p class="descricaoProjeto">
+              EcoResidencial que conecta condomínios e recicladores para
+              facilitar a gestão de recicláveis e incentivar a sustentabilidade.
+            </p>
+
+            <div class="tagsProjeto">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tagAcademica">Projeto Academico</span>
+            </div>
+
+            <div class="btnsProjeto">
+              <a href="https://ecoresidencial.vercel.app/" class="btnPrimary">Ver Projeto
+                <img src="./src/img/icones/open-icon.svg" alt="" class="iconLink"/>
+              </a>
+              <a href="https://github.com/danixz02/ecoresidencialfrontend" class="btnSecondary">
+                <img src="./src/img/icones/github-icon.svg" alt="" class="iconLink" />Git Hub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="minhasSkills">
+      <div class="infosSection">
+        <span class="tag">Minhas Skill's</span>
+        <p class="tituloSessao">Minhas Skill's</p>
+      </div>
+
+      <div class="skills">
+        <div class="infosFront">
+          <h4>Front-End</h4>
+          <div class="front">
+            <div class="icon">
+              <img src="src/img/icones/html.svg" alt="HTML" />
+              <p>HTML</p>
+            </div>
+            <div class="icon">
+              <img src="src/img/icones/css.svg" alt="CSS" />
+              <p>CSS</p>
+            </div>
+            <div class="icon">
+              <img src="src/img/icones/js.svg" alt="JavaScript" />
+              <p>JavaScript</p>
+            </div>
+            <div class="icon">
+              <img src="src/img/icones/bootstrap.svg" alt="Bootstrap" />
+              <p>Bootstrap 5</p>
+            </div>
+            <div class="icon">
+              <img src="src/img/icones/jquery.svg" alt="jQuery" />
+              <p>jQuery</p>
+            </div>
+            <div class="icon">
+              <img src="src/img/icones/figma.svg" alt="Figma" />
+              <p>Figma</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="infosBack">
+          <h4>Back-End</h4>
+          <div class="back">
+            <div class="icon">
+              <img src="src/img/icones/node.svg" alt="Node.js" />
+              <p>Node.js</p>
+            </div>
+            <div class="icon">
+              <img src="src/img/icones/mongodb.svg" alt="MongoDB" />
+              <p>MongoDB</p>
+            </div>
+            <!-- <div class="icon">
+              <img src="src/img/icones/git.svg" alt="Git" />
+              <p>Git</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <span class="tag">CONTATO</span>
+      <h1 class="tituloSessao">CONTATO</h1>
+      <p class="CTA">Vamos trabalhar juntos?</p>
+      <span class="ctaContato">Entre em contato!</span>
+
+      <div class="btnsHome">
+        <a href="https://api.whatsapp.com/send?phone=5527995892136&text=Oi!%20%F0%9F%91%8B%20Encontrei%20seu%20portf%C3%B3lio%20e%20gostei%20muito%20do%20seu%20trabalho.%20Podemos%20conversar%20sobre%20um%20projeto%20que%20tenho%20em%20mente%3F" class="btnPrimary">Whatsapp </a>
+       <a href="mailto:danielfriedrichm@gmail.com?subject=Interesse%20no%20seu%20trabalho&body=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."  class="btnSecondary">Enviar E-mail
+       </a>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footerInfos" id="footerInfos">
+        <div class="logoFooter">
+          <img src="src/img/logo/logo_dark.svg" alt="Logo" />
+        </div>
+
+        <div class="menusFooter">
+          <p class="menusText">Menus</p>
+          <ul class="menus">
+            <li class="itensMenu"><a href="#">Início</a></li>
+            <li class="itensMenu"><a href="#sobre">Sobre mim</a></li>
+            <li class="itensMenu"><a href="#experiencias">Experiências</a></li>
+            <li class="itensMenu"><a href="#projetos">Projetos</a></li>
+            <li class="itensMenu">
+              <a href="#minhasSkills">Minhas Skill's</a>
+            </li>
+            <li class="itensMenu"><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="contatoFooter">
+          <p class="textoContatoFooter">
+            Vamos trabalhar juntos? Entre em contato!
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=5527995892136&text=Oi!%20%F0%9F%91%8B%20Encontrei%20seu%20portf%C3%B3lio%20e%20gostei%20muito%20do%20seu%20trabalho.%20Podemos%20conversar%20sobre%20um%20projeto%20que%20tenho%20em%20mente%3F" class="btnPrimary">Whatsapp </a>
+        </div>
+      </div>
+      <p class="copy">Orgulhosamente feito por <span> Daniel Friedrich </span> 2026 &copy;</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./src/scripts/navbar.js"></script>
+    <script src="./src/scripts/swiper.js"></script>
+    <script src="./src/scripts/script.js"></script>
+  </body>
+</html>

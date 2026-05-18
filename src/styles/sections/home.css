@@ -1,0 +1,36 @@
+#inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.tag {
+    background-color: var(--bg-tag);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.texto {
+    font-size: 45px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    margin-bottom: -39px;
+}
+
+.titulo {
+    font-size: 96px;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.cargo {
+    font-size: 33px;
+    font-weight: 200;
+    margin-top: -2rem;
+}
