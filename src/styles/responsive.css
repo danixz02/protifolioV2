@@ -1,3 +1,4 @@
+/* MENU BURGER */
 .burger.toggle div:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -10,188 +11,303 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* =========================
+   RESPONSIVIDADE GLOBAL
+========================= */
 @media (max-width: 911px) {
 
-  section {
-    padding: 0 10px;
+  html {
+    font-size: 93.75%; /* 15px */
   }
 
-  /* NAVBAR */
+  section {
+    padding: 0 1rem;
+  }
+
+  /* =========================
+     NAVBAR
+  ========================= */
   .navbar {
-    padding: 0 2rem;
+    padding: 1rem 1.5rem;
   }
 
   .logo img {
-    width: 4rem;
+    width: 3.8rem;
   }
 
   .burger {
     display: block;
+    z-index: 1001;
   }
 
   .menu {
-    display: block;
-    position: absolute;
-    top: 6rem;
-    left: 0;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+
+    padding: 6rem 2rem;
     background-color: var(--secondary);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    pointer-events: none;
+
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
+
+    transition: right 0.35s ease;
+    z-index: 1000;
   }
 
   .menu.active {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
+    right: 0;
   }
 
-  /* Ajuste dos itens do menu no mobile (empilhados) */
   .menu li {
-    border: none;
+    width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
   }
 
   .menu li:hover {
     background-color: var(--main-color);
-    border: none;
     color: var(--primary);
   }
 
-  /* HOME */
+  /* =========================
+     HOME
+  ========================= */
   #inicio {
-    margin-top: 3rem;
-    padding: 0 3rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    text-align: center;
   }
 
   .texto {
-    font-size: 24px;
+    font-size: clamp(1rem, 2vw, 1.4rem);
   }
 
   .titulo {
-    font-size: 66px;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    line-height: 1;
+    font-size: clamp(2.8rem, 9vw, 4.5rem);
+    margin: 2rem 0 1.5rem;
+    line-height: 1.1;
   }
 
   .cargo {
-    font-size: 20px;
-    margin-top: -1rem;
-    text-align: center;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    margin-top: -0.5rem;
   }
 
   .btnsHome {
-    width: 80%;
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .btnsHome button,
+  .btnsHome a {
+    width: 100%;
+    max-width: 320px;
   }
 
   .faixa {
-    margin-top: 4rem;
+    margin-top: 3rem;
+    padding: 1rem;
   }
 
   .textoFaixa {
-    font-size: 24px;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    text-align: center;
   }
 
-  /* SOBRE */
+  /* =========================
+     SOBRE
+  ========================= */
   #sobre {
-    margin-top: 3rem;
-    padding: 0 3rem;
+    margin-top: 4rem;
+    padding: 0 1rem;
   }
 
   .tituloSessao {
-    font-size: 46px;
+    font-size: clamp(2rem, 7vw, 3rem);
     text-align: center;
   }
 
   .infos {
+    display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
+    margin-top: 2rem;
   }
 
   .imgSobre {
     width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
   }
 
-  /* PROJETOS */
+  /* =========================
+     PROJETOS
+  ========================= */
   .cardsProjetos {
-    gap: 17px;
-    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .cardsProjetos .card {
+    width: 100%;
+    padding: 1rem;
   }
 
   .imgProjeto {
     width: 100%;
     height: auto;
-  }
-
-  .cardsProjetos .card {
-    width: 100%;
-    padding: 10px;
+    border-radius: 12px;
   }
 
   .tituloProjeto {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .descricaoProjeto {
-    font-size: 14px;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .btnsProjeto {
-    flex-direction: column;
-  }
-
-  /* SKILLS */
-  #MinhasSkills {
-    padding: 0 3rem;
-  }
-
-  .infosSection {
-    margin-top: 3.3rem;
-    text-align: center;
-  }
-
-  .infosFront, .infosBack {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .front img,
-  .back img {
-    width: 90px;
-  }
-
-  /* CTA CONTATO */
-  .CTA {
-    text-align: center;
-    font-size: 35px;
-    margin-top: 3rem;
-    margin-bottom: 20px;
-  }
-
-  /* FOOTER */
-  footer {
-    text-align: center;
-    padding: 1rem;
-  }
-
-  #footerInfos {
+    display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
+  /* =========================
+     SKILLS
+  ========================= */
+  #MinhasSkills {
+    padding: 0 1rem;
+  }
+
+  .infosSection {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .infosFront,
+  .infosBack {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr 1fr));
+    gap: 1.5rem;
+  }
+
+  .front {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .front .icon{
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+  }
+
+  .back .icon{
+    width: 100% !important;
+    height: auto;
+    max-width: 120px;
+  }
+
+  .front img,
+  .back img {
+    width: 70px;
+  }
+
+  /* =========================
+     CTA
+  ========================= */
+  .CTA {
+    text-align: center;
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    margin: 3rem 0 1.5rem;
+    line-height: 1.2;
+  }
+
+  /* =========================
+     FOOTER
+  ========================= */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  #footerInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .menusFooter {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .textoContatoFooter {
-    font-size: 25px;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
     text-align: center;
+  }
+}
+
+/* =========================
+   TELAS MUITO PEQUENAS
+========================= */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .tituloSessao {
+    font-size: 2rem;
+  }
+
+  .CTA {
+    font-size: 1.8rem;
+  }
+
+  .front img,
+  .back img {
+    width: 60px;
+  }
+
+  .menu {
+    width: 85%;
   }
 }
