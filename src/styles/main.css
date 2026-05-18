@@ -23,6 +23,8 @@
     scroll-padding-top: 4rem;
     scroll-padding-bottom: 34rem;
     font-family: "Poppins", sans-serif;
+
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
