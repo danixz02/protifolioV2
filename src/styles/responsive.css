@@ -229,19 +229,19 @@
 
   .front {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     /* flex-direction: column; */
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
 
   .back {
     width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+    /* display: flex;/*  */
+    flex-wrap: nowrap; 
     /* flex-direction: column; */
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
 
