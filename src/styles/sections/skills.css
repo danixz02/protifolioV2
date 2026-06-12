@@ -19,17 +19,17 @@
 }
 
 .skills {
-    display: flex;
-    gap: 5rem;
+    /* display: flex;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem;
-}
+    margin-top: 2rem; */
 
-.front, .back {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+
+    margin-top: 2rem;
 }
 
 .icon {
